@@ -5,9 +5,9 @@
 
     /**
      * Base styles */
-    background-color: #BEB9B2;
+    background-color: @ms-base-gray;
     border-radius: 1em;
-    color: #111;
+    color: @ms-base-black;
     font-size: 0.95em;
     width: 1.3em;
     height: 1.3em;
@@ -237,14 +237,14 @@
     /**
      * Tap symbols */
     &.@{ms-prefix}-untap {
-        background-color: #111;
+        background-color: @ms-base-black;
         color: #fff;
     }
 
     /**
      * Shadow */
     &.@{ms-prefix}-shadow {
-        box-shadow: -0.06em 0.07em 0 #111, 0 0.06em 0 #111;
+        box-shadow: -0.06em 0.07em 0 @ms-base-black, 0 0.06em 0 @ms-base-black;
         &.@{ms-prefix}-untap {
             box-shadow: -0.06em 0.07em 0 #fff, 0 0.06em 0 #fff;
         }
