@@ -1,0 +1,52 @@
+/* Mixins */
+
+.@{ms-prefix}-text-w {
+  color: @ms-color-w;
+}
+
+.@{ms-prefix}-text-u {
+  color: @ms-color-u;
+}
+
+.@{ms-prefix}-text-b {
+  color: @ms-color-b;
+}
+
+.@{ms-prefix}-text-r {
+  color: @ms-color-r;
+}
+
+.@{ms-prefix}-text-g {
+  color: @ms-color-g;
+}
+
+.@{ms-prefix}-background-w {
+  background-color: @ms-color-w;
+}
+
+.@{ms-prefix}-background-u {
+  background-color: @ms-color-u;
+}
+
+.@{ms-prefix}-background-b {
+  background-color: @ms-color-b;
+}
+
+.@{ms-prefix}-background-r {
+  background-color: @ms-color-r;
+}
+
+.@{ms-prefix}-background-g {
+  background-color: @ms-color-g;
+}
+
+.ms-split-background(@startColor, @stopColor) {
+  background: @ms-color-w; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, @startColor 0%, @startColor 50%, @stopColor 50%, @stopColor 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,@startColor), color-stop(50%,@startColor), color-stop(50%,@stopColor), color-stop(100%,@stopColor)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, @startColor 0%,@startColor 50%,@stopColor 50%,@stopColor 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, @startColor 0%,@startColor 50%,@stopColor 50%,@stopColor 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, @startColor 0%,@startColor 50%,@stopColor 50%,@stopColor 100%); /* IE10+ */
+  background: linear-gradient(135deg, @startColor 0%,@startColor 50%,@stopColor 50%,@stopColor 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@startColor', endColorstr='@stopColor',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
